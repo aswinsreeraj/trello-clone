@@ -258,7 +258,7 @@ footer a:hover {
 }
 
 @media screen and (max-width: 992px) {
-  footer .row > div {
+  footer:first-child .row > div {
     border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
   } 
 }
@@ -268,4 +268,44 @@ footer a:hover {
   width: 100%;
   background-color: white;
   margin: 10px;
+}
+
+.icon-social {
+  border: 2px solid white !important;
+  border-radius: 50% !important; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+.icon-social svg {
+  width: 1rem;
+  height: 1rem;
+  transition: width 0.1s ease, height 0.1s ease;
+}
+
+.icon-social:hover svg{
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+select {
+  max-width: 200px;
+  color: white !important;
+  border: none !important;
+  padding-right: 30px; 
+  background: #172b4d url('assets/images/icons8-expand-arrow-30.png') no-repeat right 10px center !important;
+  background-size: 20px !important;
+}
+
+.small-text {
+  font-size: 0.8rem !important;
+}
+
+.social-media {
+  gap: 1.9rem !important;
 }
