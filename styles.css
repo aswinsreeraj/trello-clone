@@ -177,11 +177,20 @@ img {
   height: 120vh;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   .mta-children.position-absolute {
-    top: 95%;
+    top: 100%;
   }
   .mta {
     height: 150vh !important;
   }
+  .work-smart .container {
+    margin-top: 60vh !important;
+    border: 1px solid blue;
+  }
+
+}
+
+.work-smart .container {
+  margin-top: 35vh;
 }
