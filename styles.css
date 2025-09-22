@@ -31,9 +31,25 @@
     src: url(assets/fonts/Charlie_Text-Semibold.woff2) format('woff2');
 }
 
+
+.ctext-bold {
+  font-family: 'Charlie Text', sans-serif !important;
+  font-weight: 500;
+}
+
+.display-text-toobold {
+  font-family: 'Charlie Display', sans-serif !important;
+  font-weight: 700;
+}
+
 body {
   font-family: 'Charlie Text', sans-serif !important;
   font-weight: 400;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 5px 10px lightgray;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 h1, h2, h3, h4, h5, h6 {
