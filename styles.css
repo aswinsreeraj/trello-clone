@@ -1,0 +1,38 @@
+/* Fixed navbar shadow on scroll */
+#navbar.scrolled {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s;
+}
+
+/* Mega menu styling */
+.mega-menu {
+  display: none; /* hide by default */
+  background-color: white;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nav-item.dropdown:hover > .mega-menu {
+  display: block; /* show on hover desktop */
+}
+
+/* Responsive: mobile slide-in menu */
+@media (max-width: 991px) {
+  .mega-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    transition: right 0.3s;
+    z-index: 1050;
+  }
+  .mega-menu.active {
+    right: 0;
+  }
+  .mega-menu .row {
+    flex-direction: column !important; /* main + aside stacked */
+  }
+}
