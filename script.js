@@ -66,18 +66,47 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   goToSlide(0);
-});
-
-
 
 const buttons = document.querySelectorAll(".testi-btn");
-const carouselInner = document.querySelector(".testi-carousel-inner");
+const cards = document.querySelectorAll(".carousel-card");
+const prevBtn = document.querySelector(".testi-conatiner .btn:first-of-type");
+const nextBtn = document.querySelector(".testi-conatiner .btn:last-of-type");
 
-buttons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    const index = parseInt(btn.getAttribute("data-slide"));
-    carouselInner.style.transform = `translateX(${-100 * index}%)`;
-     buttons.forEach(b => b.classList.remove("active"));
-     btn.classList.add("active");
+let currentIndex = 0;
+
+function showSlide(index) {
+  if (index < 0) index = cards.length - 1;
+  if (index >= cards.length) index = 0;
+  currentIndex = index;
+
+  // update buttons
+  buttons.forEach((b, i) => {
+    b.classList.toggle("active", i === index);
   });
+
+  // update cards
+  cards.forEach((card, i) => {
+    card.classList.toggle("d-none", i !== index);
+  });
+}
+
+// dot clicks
+buttons.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    showSlide(i);
+  });
+});
+
+// prev/next
+prevBtn.addEventListener("click", () => {
+  showSlide(currentIndex - 1);
+});
+nextBtn.addEventListener("click", () => {
+  showSlide(currentIndex + 1);
+});
+
+// init
+showSlide(0);
+
+
 });
