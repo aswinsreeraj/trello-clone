@@ -67,3 +67,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   goToSlide(0);
 });
+
+
+
+const buttons = document.querySelectorAll(".testi-btn");
+const carouselInner = document.querySelector(".testi-carousel-inner");
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const index = parseInt(btn.getAttribute("data-slide"));
+    carouselInner.style.transform = `translateX(${-100 * index}%)`;
+     buttons.forEach(b => b.classList.remove("active"));
+     btn.classList.add("active");
+  });
+});
