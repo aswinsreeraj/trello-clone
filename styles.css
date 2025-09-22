@@ -48,7 +48,7 @@ body {
 }
 
 .navbar.scrolled {
-  box-shadow: 0 5px 10px lightgray;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s ease-in-out;
 }
 
@@ -147,4 +147,28 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
   box-shadow: 0 5px 10px lightgray;
   border-left: 10px solid #00c7e5;
+}
+
+.mta {
+  background-color: #0065ff;
+}
+
+img {
+  width: 100%;
+  display: inline-block;
+  object-fit: cover;
+}
+
+.mta-children {
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+
+.mta-children.position-absolute {
+  top: 80% !important;
+}
+
+.mta .container {
+  height: 120vh;
 }
