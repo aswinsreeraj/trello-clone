@@ -35,6 +35,17 @@ a {
   color: rgb(0, 82, 204);
 }
 
+@media screen and (max-width: 992px) {
+  button[aria-label="Log in"] {
+    width: 100%;
+    border: 1px solid blue;
+  }
+  button[aria-label="Get Trello"] {
+    width: 100%;
+    border: 1px solid blue;
+  }
+}
+
 .ctext-bold {
   font-family: 'Charlie Text', sans-serif !important;
   font-weight: 500;
