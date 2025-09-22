@@ -151,6 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mta {
   background-color: #0065ff;
+  height: 120vh;
 }
 
 img {
@@ -166,9 +167,21 @@ img {
 
 
 .mta-children.position-absolute {
-  top: 80% !important;
+  top: 80%;
+  left: 0;
+  width: 100% !important;
+  margin: auto;
 }
 
 .mta .container {
   height: 120vh;
+}
+
+@media screen and (max-width: 900px) {
+  .mta-children.position-absolute {
+    top: 95%;
+  }
+  .mta {
+    height: 150vh !important;
+  }
 }
