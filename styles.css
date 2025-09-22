@@ -229,3 +229,20 @@ img {
 .w-75 {
   width: 80% !important;
 }
+
+.sign-up {
+  background-color: #f4f5f7;
+  margin: 0 auto;
+  padding: 3% 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .sign-up {
+    background: linear-gradient(60deg, rgb(82, 67, 170), rgb(237, 80, 180)) 0% 0% / auto repeat scroll padding-box border-box rgb(82, 67, 170);
+    color: white;
+  }
+
+  .sign-up a {
+    color: white;
+  }
+}
