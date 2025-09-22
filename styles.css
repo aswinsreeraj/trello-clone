@@ -31,6 +31,9 @@
     src: url(assets/fonts/Charlie_Text-Semibold.woff2) format('woff2');
 }
 
+a {
+  color: rgb(0, 82, 204);
+}
 
 .ctext-bold {
   font-family: 'Charlie Text', sans-serif !important;
