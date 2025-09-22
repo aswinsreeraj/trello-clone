@@ -1,38 +1,56 @@
-/* Fixed navbar shadow on scroll */
-#navbar.scrolled {
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: box-shadow 0.3s;
+/* Font Faces */
+@font-face {
+    font-family: 'Charlie Display';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: url(assets/fonts/Charlie_Display-Semibold.woff2) format('woff2');
 }
 
-/* Mega menu styling */
-.mega-menu {
-  display: none; /* hide by default */
-  background-color: white;
-  border: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
+@font-face {
+    font-family: 'Charlie Display';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: url(assets/fonts/Charlie_Display-Bold.woff2) format('woff2');
 }
 
-.nav-item.dropdown:hover > .mega-menu {
-  display: block; /* show on hover desktop */
+@font-face {
+    font-family: 'Charlie Text';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(assets/fonts/Charlie_Text-Regular.woff2) format('woff2');
 }
 
-/* Responsive: mobile slide-in menu */
-@media (max-width: 991px) {
-  .mega-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    height: 100%;
-    width: 100%;
-    overflow-y: auto;
-    transition: right 0.3s;
-    z-index: 1050;
-  }
-  .mega-menu.active {
-    right: 0;
-  }
-  .mega-menu .row {
-    flex-direction: column !important; /* main + aside stacked */
-  }
+@font-face {
+    font-family: 'Charlie Text';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: url(assets/fonts/Charlie_Text-Semibold.woff2) format('woff2');
+}
+
+body {
+  font-family: 'Charlie Text', sans-serif !important;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Charlie Display' !important;
+  font-weight: 500;
+}
+
+
+
+.nav-link {
+  color: black !important;
+}
+
+.active {
+  color: blue !important;
+}
+
+.nav-link:hover {
+  color: blue !important;
 }
