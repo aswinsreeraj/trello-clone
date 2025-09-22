@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
   color: black !important;
 }
 
-.active {
+.nav-link.active {
   color: blue !important;
 }
 
@@ -74,4 +74,77 @@ h1, h2, h3, h4, h5, h6 {
 .hero-page {
     background-color: rgb(244, 245, 247) !important;
     color: rgb(9, 30, 66) !important;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner-bg {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f2f4;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  transition: background-image 0.5s ease;
+}
+
+.left-btn {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px white;
+  border-left: 10px solid#ffffff00;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  color: black;
+}
+
+.left-btn.active {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px lightgray;
+  border-left: 10px solid #00c7e5;
+}
+
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #091e42;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+  width: 50px;
+  border-radius: 25px;
+  background-color: #848ea0;
+}
+
+
+.left-btn-carousel {
+  width: 100%;
+}
+
+.carousel-left-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 300%; /* 3 items */
+}
+
+.left-btn-carousel .left-btn {
+  min-width: 100%;
+  margin: 0 5px;
+  flex-shrink: 0;
+}
+
+.carousel-btn {
+  margin: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px lightgray;
+  border-left: 10px solid #00c7e5;
 }
