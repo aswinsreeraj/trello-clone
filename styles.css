@@ -42,7 +42,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
 .nav-link {
   color: black !important;
 }
@@ -53,4 +52,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-link:hover {
   color: blue !important;
+}
+
+
+.hero-page {
+    background-color: rgb(244, 245, 247) !important;
+    color: rgb(9, 30, 66) !important;
 }
