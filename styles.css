@@ -225,3 +225,7 @@ img {
   border-radius: 25px;
   background-color: #848ea0;
 }
+
+.w-75 {
+  width: 80% !important;
+}
