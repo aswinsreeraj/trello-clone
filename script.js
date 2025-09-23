@@ -1,13 +1,3 @@
-window.addEventListener("scroll", function () {
-    const navbar = document.querySelector(".navbar");
-    if (window.scrollY > 0) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-    }
-  });
-
-
 document.addEventListener('DOMContentLoaded', () => {
   const leftBtns = document.querySelectorAll('.left-btn');
   const miniBtns = document.querySelectorAll('.mini-btn');
@@ -108,5 +98,29 @@ nextBtn.addEventListener("click", () => {
 // init
 showSlide(0);
 
+window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 0) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+});
+
+const openBtn = document.getElementById("openMenuBtn");
+  const closeBtn = document.getElementById("closeMenuBtn");
+  const navbar = document.getElementById("navbarToggler");
+
+  openBtn.addEventListener("click", function () {
+    openBtn.classList.add("d-none");   // hide hamburger
+    closeBtn.classList.remove("d-none"); // show close
+  });
+
+  closeBtn.addEventListener("click", function () {
+    closeBtn.classList.add("d-none");  // hide close
+    openBtn.classList.remove("d-none"); // show hamburger
+  });
+
 
 });
+
