@@ -185,7 +185,7 @@ img {
 
 
 .mta-children.position-absolute {
-  top: 80%;
+  top: 75%;
   left: 0;
   width: 100% !important;
   margin: auto;
@@ -197,19 +197,31 @@ img {
 
 @media screen and (max-width: 992px) {
   .mta-children.position-absolute {
-    top: 100%;
+    top: 98%;
   }
   .mta {
     height: 150vh !important;
   }
   .work-smart .container {
-    margin-top: 60vh !important;
+    margin-top: 53vh !important;
   }
-
 }
 
+@media screen and (min-width: 1900px) {
+  .mta-children.position-absolute {
+    top: 68%;
+  }
+  .mta {
+    height: 120vh !important;
+  }
+  .work-smart .container {
+    margin-top: 15vh !important;
+  }
+}
+
+
 .work-smart .container {
-  margin-top: 35vh;
+  margin-top: 30vh;
 }
 
 .carousel-card {
@@ -224,6 +236,14 @@ img {
   border-bottom-right-radius: 10px;
 }
 
+
+@media screen and (max-width: 992px) {
+  .testimonials .col-lg-4 {
+    background-color: #0747a6;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+   }
+}
 
 .testi-btn {
   width: 12px;
@@ -322,4 +342,16 @@ select {
 
 .social-media {
   gap: 1.9rem !important;
+}
+
+footer .col-lg:hover {
+  background-color: rgb(100, 100, 100, 0.2);
+  border-radius: 4px;
+}
+
+
+@media screen and (min-width: 992px) {
+  .add-border-top {
+    border-top: 1px solid gray;
+  }
 }
